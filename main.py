@@ -10,7 +10,7 @@ logging.basicConfig(
 )
 
 
-def get_files(folder: Path) -> list[Path]:
+def get_files(folder: Path) -> list[Path] | list:
     """Retorna uma lista de arquivos no diretório fornecido."""
     try:
         return [
